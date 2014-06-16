@@ -17,28 +17,30 @@ codex-env$ source bin/activate
 ```
 NOTE - you need to run this command every time you have a new terminal you want to work with the project:
 ```
-cd workout_env/
+cd codex-env/
 source bin/activate
 ```
 
 #### Dependencies
+
 Install System Dependencies
-* This part is manual - the rest of the python dependencies will be installed automatically using pip in the next step.
+
+This part is manual - the rest of the python dependencies will be installed automatically using pip in the next step.
 ```
 sudo apt-get install python-dev build-essential libpq-dev libevent-dev libmemcached-dev postgresql-client node-less
 ```
 
 Python Dependencies
-* Currently we only use one set of requirements. We should split this into a dev and prod list once we have production running.
+
+Currently we only use one set of requirements. We should split this into a dev and prod list once we have production running.
 ```
 pip install -r reqs.txt
 ```
 
 #### Database
-* We are using PostgreSQL for this project.
+We are using PostgreSQL for this project.
 
-First time - install postgresql with ubuntu. 
-Example error: *createdb: could not connect to database template1: FATAL:  role "YOUR_USER_NAME" does not exist*
+Note: Example error: *createdb: could not connect to database template1: FATAL:  role "YOUR_USER_NAME" does not exist*
 ```
 sudo su
 su postgres
