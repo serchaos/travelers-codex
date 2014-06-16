@@ -4,4 +4,4 @@ django-debug-toolbar>=1.2
 shortuuid
 django-extensions
 Werkzeug
-
+south
