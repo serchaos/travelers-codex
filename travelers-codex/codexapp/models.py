@@ -35,7 +35,7 @@ class Faction(TrackCreatedUpdatedModel):
 # enum-type for item rarity
 class Rarity(TrackCreatedUpdatedModel):
     name                            = models.CharField(max_length=64)
-    color                           = models.CharField()
+    color                           = models.CharField(max_length=32)
 
 
 # enum-type for all weapon types (sniper, fusion, scout rifle, etc)
@@ -175,7 +175,7 @@ class Consumable(TrackCreatedUpdatedModel):
     item_id                         = models.ForeignKey('Item')
     name                            = models.CharField(max_length=64)
     description                     = models.CharField(max_length=2048)
-    stack_to                        = models.PostiveIntegerField()
+    stack_to                        = models.PositiveIntegerField()
 
 
 class Mission(TrackCreatedUpdatedModel):
@@ -188,7 +188,7 @@ class Bounty(TrackCreatedUpdatedModel):
     item_id                         = models.ForeignKey('Item')
     name                            = models.CharField(max_length=64)
     description                     = models.CharField(max_length=2048)
-    rep_faction                     = models.FoeignKey('Faction')
+    rep_faction                     = models.ForeignKey('Faction')
     rep_amount                      = models.PositiveIntegerField()
     exp_amount                      = models.PositiveIntegerField()
     
