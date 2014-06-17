@@ -1,0 +1,47 @@
+[
+    {
+        "model": "codexapp.Material",
+        "pk": 1,
+        "fields": {
+            "name": "Spinmetal",
+            "description": "A filigree of bubbled metal grown by wild colonies of Golden Age cytoconstructors.",
+            "image": "/static/img/item_icons/spinmetal.png"
+        }
+    },
+    {
+        "model": "codexapp.Material",
+        "pk": 2,
+        "fields": {
+            "name": "Weapon Parts",
+            "description": "For weapon upgrades and repairs.",
+            "image": "/static/img/item_icons/weapon_parts.png"
+        }
+    },
+    {
+        "model": "codexapp.Material",
+        "pk": 3,
+        "fields": {
+            "name": "Sapphire Wire",
+            "description": "A favorite of Hunters because of its versatility, this wire is incorporated into almost all Hunter gear.",
+            "image": "/static/img/item_icons/sapphire_wire.png"
+        }
+    },
+    {
+        "model": "codexapp.Material",
+        "pk": 4,
+        "fields": {
+            "name": "Glass Shards",
+            "description": "Translucent shards of non-baryonic matter, trembling with contained energy.",
+            "image": "/static/img/item_icons/glass_shards.png"
+        }
+    },
+    {
+        "model": "codexapp.Material",
+        "pk": 5,
+        "fields": {
+            "name": "Ascendant Energy",
+            "description": "The boiling energies of the zero-point field trapped in a stasis capsule.",
+            "image": "/static/img/item_icons/ascendant_energy.png"
+        }
+    }
+]

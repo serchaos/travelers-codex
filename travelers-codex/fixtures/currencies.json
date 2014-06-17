@@ -1,0 +1,29 @@
+[
+    {
+        "model": "codexapp.Currency",
+        "pk": 1,
+        "fields": {
+            "name": "Glimmer",
+            "description": null,
+            "image": null,
+        }
+    },
+    {
+        "model": "codexapp.Currency",
+        "pk": 1,
+        "fields": {
+            "name": "Crucible Marks",
+            "description": "Crucible Marks can be used to purchase Legendary weapons and armor in the Tower.",
+            "image": "/static/img/item_icons/crucible_marks.png",
+        }
+    },
+    {
+        "model": "codexapp.Currency",
+        "pk": 1,
+        "fields": {
+            "name": "Vanguard Marks",
+            "description": "Vanguard Marks can be used to purchase Legendary weapons and armor in the Tower.",
+            "image": null,
+        }
+    }
+]
