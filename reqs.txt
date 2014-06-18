@@ -5,3 +5,5 @@ shortuuid
 django-extensions
 Werkzeug
 south
+djangorestframework
+django-compressor

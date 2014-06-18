@@ -8,7 +8,7 @@ from sys import path
 
 ########## PATH CONFIGURATION
 # Absolute filesystem path to the Django project directory:
-DJANGO_ROOT = dirname(dirname(abspath(__file__)))
+DJANGO_ROOT = normpath(join(dirname(abspath(__file__))))
 
 # Absolute filesystem path to the top-level project folder:
 SITE_ROOT = dirname(DJANGO_ROOT)
@@ -16,6 +16,8 @@ SITE_ROOT = dirname(DJANGO_ROOT)
 # Site name:
 SITE_NAME = basename(DJANGO_ROOT)
 
+print DJANGO_ROOT
+print SITE_ROOT
 # Add our project to our pythonpath, this way we don't need to type our project
 # name in our dotted import paths:
 path.append(DJANGO_ROOT)
@@ -96,7 +98,7 @@ STATIC_URL = '/static/'
 
 # See: https://docs.djangoproject.com/en/dev/ref/contrib/staticfiles/#std:setting-STATICFILES_DIRS
 STATICFILES_DIRS = (
-    normpath(join(DJANGO_ROOT, 'assets')),
+    normpath(join(DJANGO_ROOT, 'src')),
 )
 
 # See: https://docs.djangoproject.com/en/dev/ref/contrib/staticfiles/#staticfiles-finders
@@ -196,7 +198,7 @@ THIRD_PARTY_APPS = (
 )
 
 LOCAL_APPS = (
-    'travelers-codex.codexapp'
+    'codexapp', 
 )
 
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
@@ -236,18 +238,6 @@ LOGGING = {
 ########## END LOGGING CONFIGURATION
 
 
-########## CELERY CONFIGURATION
-# See: http://celery.readthedocs.org/en/latest/configuration.html#celery-task-result-expires
-CELERY_TASK_RESULT_EXPIRES = timedelta(minutes=30)
-
-# See: http://docs.celeryproject.org/en/master/configuration.html#std:setting-CELERY_CHORD_PROPAGATES
-CELERY_CHORD_PROPAGATES = True
-
-# See: http://celery.github.com/celery/django/
-setup_loader()
-########## END CELERY CONFIGURATION
-
-
 ########## WSGI CONFIGURATION
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#wsgi-application
 WSGI_APPLICATION = 'wsgi.application'
@@ -272,23 +262,8 @@ COMPRESS_JS_FILTERS = [
 ]
 ########## END COMPRESSION CONFIGURATION
 
-########## GUARDIAN and USERENA
-# http://docs.django-userena.org/en/latest/installation.html#id2
-ANONYMOUS_USER_ID = -1
-AUTH_PROFILE_MODULE = 'accounts.UserProfile'
-
-LOGIN_REDIRECT_URL = '/accounts/%(username)s/'
-LOGIN_URL = '/accounts/signin/'
-LOGOUT_URL = '/accounts/signout/'
-
-AUTHENTICATION_BACKENDS = (
-    'userena.backends.UserenaAuthenticationBackend',
-    'guardian.backends.ObjectPermissionBackend',
-    'django.contrib.auth.backends.ModelBackend',
-)
-########## END GUARDIAN and USERENA
-
-
 SOUTH_MIGRATION_MODULES = {
     'easy_thumbnails': 'easy_thumbnails.south_migrations',
 }
+
+from local_settings import *
