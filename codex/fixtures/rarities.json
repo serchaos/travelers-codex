@@ -1,6 +1,6 @@
 [
     {
-        "model": "codexapp.Rarity",
+        "model": "codex.Rarity",
         "pk": 1,
         "fields": {
             "name": "Common",
@@ -8,7 +8,7 @@
         }
     },
     {
-        "model": "codexapp.Rarity",
+        "model": "codex.Rarity",
         "pk": 2,
         "fields": {
             "name": "Uncommon",
@@ -16,7 +16,7 @@
         }
     },
     {
-        "model": "codexapp.Rarity",
+        "model": "codex.Rarity",
         "pk": 3,
         "fields": {
             "name": "Rare",
@@ -24,7 +24,7 @@
         }
     },
     {
-        "model": "codexapp.Rarity",
+        "model": "codex.Rarity",
         "pk": 4,
         "fields": {
             "name": "Legendary",

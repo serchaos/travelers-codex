@@ -1,7 +1,0 @@
-Django>=1.6.0
-psycopg2==2.5
-django-debug-toolbar>=1.2
-shortuuid
-django-extensions
-Werkzeug
-south

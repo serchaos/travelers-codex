@@ -1,6 +1,6 @@
 [
     {
-        "model": "codexapp.Material",
+        "model": "codex.Material",
         "pk": 1,
         "fields": {
             "name": "Spinmetal",
@@ -9,7 +9,7 @@
         }
     },
     {
-        "model": "codexapp.Material",
+        "model": "codex.Material",
         "pk": 2,
         "fields": {
             "name": "Weapon Parts",
@@ -18,7 +18,7 @@
         }
     },
     {
-        "model": "codexapp.Material",
+        "model": "codex.Material",
         "pk": 3,
         "fields": {
             "name": "Sapphire Wire",
@@ -27,7 +27,7 @@
         }
     },
     {
-        "model": "codexapp.Material",
+        "model": "codex.Material",
         "pk": 4,
         "fields": {
             "name": "Glass Shards",
@@ -36,7 +36,7 @@
         }
     },
     {
-        "model": "codexapp.Material",
+        "model": "codex.Material",
         "pk": 5,
         "fields": {
             "name": "Ascendant Energy",
