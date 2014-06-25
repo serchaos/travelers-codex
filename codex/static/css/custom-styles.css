@@ -1,0 +1,56 @@
+
+@font-face {
+    font-family: marksman;
+    src: url(/static/fonts/MARKSMAN.ttf) format(truetype);
+
+}
+
+body {
+    color: #555;
+    background-color: #222;
+}
+
+hr {
+    border-top: 1px solid #999;
+}
+
+.form-control:focus {
+    border-color: #4682B4;
+}
+
+.navbar-inverse {
+    font-family: marksman, sans-serif;
+    background-color: #111;
+    border-color: #101010;
+}
+
+.jumbotron {
+    background-color: #222;
+}
+
+.item-img, .item-info {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.item-info {
+    width: 80%;
+}
+
+.item-name {
+    font-weight: bold;
+    color: #4682B4;
+}
+
+.item-description {
+    display: block;
+}
+
+.list-group-item {
+    background-color: #FFF;
+}
+
+.list-group-item:hover {
+    background-color: #EEE;
+}
+

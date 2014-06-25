@@ -7,3 +7,4 @@ urlpatterns = patterns('',
     url(r'^$', include('codex.urls')),
     url(r'^admin/', include(admin.site.urls)),
 )
+
